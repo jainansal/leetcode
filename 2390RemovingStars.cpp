@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/removing-stars-from-a-string/
+
 class Solution {
 public:
     string removeStars(string s) {
