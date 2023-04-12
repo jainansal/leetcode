@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/simplify-path/description/
 
+// TC - O(len(path)), SC - O(len(path))
 class Solution {
 public:
     string simplifyPath(string path) {
