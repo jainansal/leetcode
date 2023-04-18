@@ -1,0 +1,28 @@
+// https://leetcode.com/problems/merge-strings-alternately/description/
+
+class Solution {
+public:
+
+    // TC - O(max(len(word1), len(word2)))  SC - O(max(|word1|, |word2|))
+    string mergeAlternately(string word1, string word2) {
+        string final_string;
+        int n1 = word1.length(), n2 = word2.length(), i=0, j=0;
+        while(i<n1 && j<n2)
+        {
+            final_string += word1[i];
+            final_string += word2[j];
+            i++, j++;
+        }
+        while(i<n1)
+        {
+            final_string += word1[i];
+            i++;
+        }
+        while(j<n2)
+        {
+            final_string += word2[j];
+            j++;
+        }
+        return final_string;
+    }
+};
